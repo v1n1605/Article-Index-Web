@@ -1,0 +1,176 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.6; /* Keterbacaan baris secara umum */
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0; /* Margin atas dan bawah body */
+}
+ol, ul {
+    list-style: none;
+    margin-bottom: 1em; /* Jarak bawah daftar */
+    padding-left: 20px; /* Indentasi daftar */
+}
+
+ol li, ul li {
+    margin-bottom: 0.5em; /* Jarak antar item daftar */
+}
+
+blockquote, q {
+    quotes: none;
+    margin: 1em 0; /* Margin atas dan bawah blockquote */
+    padding: 0.5em 1em;
+    border-left: 5px solid #ccc;
+    font-style: italic;
+    color: #777;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 700px;
+    margin: 25px auto;
+    background-color: snow;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.artikelwrapper {
+    margin-bottom: 2em;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.artikelwrapper:last-child {
+    border-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.artikelwrapper h1 {
+    font-size: 2em; /* Ukuran judul utama */
+    font-weight: bold;
+    color: darkslategray;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.artikelwrapper h2 {
+    font-size: 1.6em; /* Ukuran sub-judul */
+    color: #0056b3;
+    margin-top: 16px; /* Jarak atas subjudul */
+    margin-bottom: 16px; /* Jarak bawah subjudul */
+    font-weight: bold;
+}
+
+.artikelwrapper h3 {
+    font-size: 1.4em; /* Ukuran sub-sub-judul */
+    color: #337ab7;
+    margin-top: 1.2em; /* Jarak atas sub-subjudul */
+    margin-bottom: 0.6em; /* Jarak bawah sub-subjudul */
+    font-weight: bold;
+}
+
+.artikelwrapper h4 {
+    font-size: 1.2em; /* Ukuran nama penulis */
+    color: darkslategray;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.artikelwrapper h5 {
+    font-size: 1em; /* Ukuran heading level 5 */
+    color: #555;
+    margin-top: 1em; /* Jarak atas heading level 5 */
+    margin-bottom: 0.4em; /* Jarak bawah heading level 5 */
+    font-weight: bold;
+}
+
+.artikelwrapper h6 {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 1em;
+}
+
+.artikelwrapper img {
+    width: 100%;
+    max-width: 300px;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.artikelwrapper p {
+    font-size: 1em; /* Ukuran teks paragraf */
+    color: darkslategray;
+    margin-bottom: 1em; /* Jarak bawah antar paragraf */
+    text-align: justify;
+}
+
+/* Gaya untuk poin-poin penting */
+.artikelwrapper strong {
+    font-weight: bold;
+    color: #d9534f; /* Warna merah untuk penekanan */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em 0;
+    color: gray;
+    font-size: 0.9em;
+}
+
+/* Clear float setelah gambar */
+.artikelwrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
